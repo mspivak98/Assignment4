@@ -1,0 +1,35 @@
+.container {
+    background-image: url(clockimage.png);
+    background-size: 100% 100%;
+    position:absolute;
+    width:500px;
+    height:500px;
+}
+body {background-color: coral;}
+.hand {
+    width:150px;
+    height:150px;
+    position:absolute;
+    top: 35%;
+  left: 50%;
+  transform-origin: left;
+  animation:handMovement 10s infinite linear;
+}
+@keyframes handMovement {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.hand2 {
+  width:195px;
+  height:150px;
+  position:absolute;
+  top: 35%;
+left: 50%;
+transform-origin: left;
+animation:handMovement 20s infinite linear;
+}
